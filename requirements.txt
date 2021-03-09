@@ -1,0 +1,11 @@
+streamlit
+numpy
+pandas
+seaborn
+matplotlib
+sklearn
+scikit-learn
+pickleshare
+plotly
+gensim
+nltk

@@ -1,0 +1,242 @@
+
+  /* unvisited link */
+a:link {
+  color:#7d8587;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #7d8587;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #7d8587;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #7d8587;
+  text-decoration: none;
+}
+
+/* For mobile: */
+@media only screen and (min-width: 0px) {
+  
+
+  #container {
+  
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+    background-color: #19292d;
+  }
+  .split {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  
+}
+
+.left{
+  left: 0;
+}
+.right{
+  right: 0;
+}
+#About {
+  width: 100%;
+  
+  font-family: Montserrat;
+  font-size: 36px;
+  position: static;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+  #navBarLink{
+    position: initial;
+    padding-left: 20;
+    padding-top: 20;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 500;
+    display: inline-block;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #7d8587;
+  }
+  #heading1{
+    position: initial;
+    padding-left: 20;
+    position: absolute;
+    margin-left: auto;
+    top: 50%;
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 1000;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+  #heading2{
+    padding-left: 20;
+    padding-top: 60;
+    font-size: 36px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+  #caption1{
+    position: initial;
+    padding-left: 20;
+    position: relative;
+    top: 50%;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #7d8587;
+  }
+  #caption2{
+    padding-left: 20;
+    padding-right: 20;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #7d8587;
+  }
+  .center-image {
+
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.center {
+    margin: auto;
+    width: 182;
+    text-align: center;
+  }
+  #svgLink {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10px;
+    width: 182;
+    margin: auto;
+  }
+
+  #dp {
+    height: 300px;
+    background-color: #7d8587;
+  }
+
+  #Rectangle-5 {
+    position: relative;
+    width: 80%;
+    
+    margin: auto;
+    border-radius: 4px;
+    background-color: rgba(125, 133, 135, 0.1);
+  }
+  #Rectangle-7 {
+
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  margin-bottom: auto;
+  border-radius: 6px;
+  
+  width: 80%;
+  background-color: #c4c4c4;
+}  
+  #project_head{
+  width: 80%;
+  margin: auto;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+  #Profile-Image{
+   
+    width: 100%;
+    
+  }
+  #project_content{
+
+  margin: auto;
+  width: 80%;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #7d8587;
+
+  }
+  #Rectangle-8 {
+  position: absolute;
+  text-align: center;
+  bottom: 30;
+  right: 60;
+  margin: auto;
+  width: 150px;
+  height: 34px;
+  border-radius: 4px;
+  background-color: #19292d;
+}
+#Github-Project {
+  margin: auto;
+  width: 89px;
+  height: 0px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+#Vector {
+  margin: auto;
+  
+  width: 14px;
+  height: 13.4px;
+  background-color: #ffffff;
+}
+
+
+  }
+
+
+
+  

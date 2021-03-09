@@ -11,3 +11,4 @@ gensim
 nltk
 spacy
 unidecode
+https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.0.0/pt_core_news_sm-3.0.0.tar.gz

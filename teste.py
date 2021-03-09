@@ -9,6 +9,8 @@ import re
 import unidecode
 import streamlit as st
 import pandas as pd
+import plotly.express as px
+
 
 stopwords = nltk.corpus.stopwords.words('portuguese')
 stopwords.extend(
@@ -47,11 +49,13 @@ texto =  re.sub('rede ',"rede_", texto)
 texto =  re.sub('nao ',"nao_", texto)
 texto =  re.sub('pre ',"pre_", texto)
 texto= re.sub('pos ',"pos_", texto)
+
 nlp = spacy.load("pt_core_news_sm",disable=['parser', 'ner'])
 texto = nlp(texto)
 texto = [word.lemma_ for word in texto ]
-texto = [word for word in texto if word not in stopwords]
 
+texto = [word for word in texto if word not in stopwords]
+print(texto)
 
 common_dictionary = Dictionary.load("LDA1/model_40_reclamacao.id2word")#
 common_corpus = np.array([common_dictionary.doc2bow(texto)])
@@ -120,6 +124,8 @@ def converteldas(x,rodada):
             return "problemas de acesso a serviços digitais via rede da prestadora"
         elif x == 5:
             return "reclamação recorrente"
+        else:
+            return "outros assuntos"
 
 
 
@@ -185,6 +191,8 @@ def converteldas(x,rodada):
             return "problemas em geral com a internet"
         elif x == 34:
             return "troca ou aquisição de chip ou aparelho"
+        else:
+            return "outros assuntos"
 
 
 
@@ -202,6 +210,8 @@ df3 = pd.merge(df,df2,on = "Tópicos",how = "outer",validate="one_to_one")
 
 df3['Percentual'] = np.where((df3.Percentual_x>df3.Percentual_y),df3.Percentual_x,df3.Percentual_y)
 
+index_names = df3[ (df3['Tópicos'] == "outros assuntos")].index 
+df3.drop(index_names, inplace = True) 
 
 
 # for (palavra, topics) in word_dominanttopic:
@@ -229,7 +239,6 @@ frase_col = " ".join(frase_col)
 
 st.components.v1.html(frase_col)
 
-import plotly.express as px
 fig = px.bar(df3, x='Tópicos', y='Percentual' , height=600)#x='topico', y='percentual'
 
 st.plotly_chart(fig)
